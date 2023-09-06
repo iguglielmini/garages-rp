@@ -1,0 +1,251 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+body,
+h1,
+h2,
+h3,
+p,
+span {
+  font-family: "Poppins" !important;
+  margin: 0;
+}
+
+.content {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.box-garages {
+  width: 100%;
+  height: 700px;
+  padding: 24px;
+  border-radius: 16px;
+  border: 1px solid grey;
+  background-color: #090a14;
+}
+.line-info {
+  display: flex;
+}
+.title-h3 {
+  font-weight: 700;
+  font-size: 24px;
+  color: white;
+  padding-left: 8px;
+}
+.content-info-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.content-serach {
+  padding-top: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.input-content {
+  width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.custom-input {
+  width: 420px;
+  padding: 10px 15px;
+  border: 1px solid rgba(3, 5, 6, 0.5);
+  background-color: rgba(60, 62, 63, 0.4);
+  color: #fff;
+  transition: background-color 0.3s;
+
+  font-size: 1rem;
+  outline: none;
+
+  border-top-left-radius: 16px;
+  border-bottom-left-radius: 16px;
+}
+
+.custom-input:hover {
+  background-color: rgba(54, 61, 65, 0.3);
+}
+.custom-input:focus {
+  background-color: rgba(45, 49, 51, 0.5);
+}
+.custom-button {
+  padding: 10px 15px;
+  border: 1px solid rgba(47, 80, 97, 0.5);
+  background-color: rgba(63, 108, 131, 0.2);
+  transition: background-color 0.3s;
+  outline: none;
+
+  border-top-right-radius: 16px;
+  border-bottom-right-radius: 16px;
+}
+
+.custom-button:hover {
+  background-color: rgba(98, 203, 255, 0.788);
+}
+.custom-button img {
+  width: 25px;
+}
+
+.content-buttons-search {
+  width: 30%;
+  display: flex;
+  padding-left: 24px;
+  align-items: center;
+}
+.content-buttons-search button {
+  margin: 0 8px;
+  padding: 10px 15px;
+  border-radius: 8px;
+  outline: none;
+
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+
+  border: 1px solid #22201a;
+  background-color: #22201a;
+  transition: background-color 0.3s;
+}
+.content-buttons-search button:hover {
+  background: linear-gradient(to right, #0072ff, #00c6ff);
+}
+.content-car-list-info {
+  width: 100%;
+  height: 80%;
+  padding-top: 24px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.box-info-car {
+  width: 480px;
+  height: 100%;
+  padding: 16px;
+  border-radius: 16px;
+  border: 1px solid white;
+  background-size: cover;
+  background-position: center;
+  background-image: linear-gradient(to bottom, #0073ff67, #24242c),
+    url("../assets/img-bg.jpg");
+}
+
+.content-box-info-text h2 {
+  font-size: 24px;
+  font-family: "Poppins";
+  font-weight: 600;
+  color: white;
+}
+.content-box-info-text p {
+  font-size: 18px;
+  font-family: "Poppins";
+  color: white;
+}
+.content-button-car {
+  display: flex;
+  padding-top: 8px;
+  align-items: center;
+  justify-content: space-between;
+}
+.content-button-car button {
+  width: 140px;
+  padding: 16px 0;
+  border-radius: 8px;
+
+  color: white;
+  font-size: 14px;
+
+  border: 1px solid #0073ff67;
+  background-color: #495773;
+  transition: background-color 0.3s;
+  outline: none;
+}
+
+.content-button-car button:hover {
+  background: linear-gradient(to right, #0072ff, #00c6ff);
+}
+
+.content-engine {
+  padding-top: 8px;
+}
+
+.content-info-engine {
+  padding-top: 16px;
+}
+
+.content-info-engine p {
+  color: white;
+}
+
+.custom-progress {
+  background: rgba(60, 62, 63, 0.4);
+}
+
+.content-other-information {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 16px;
+}
+
+.info-total-car {
+  width: 100px;
+  height: 120px;
+  border: 1px solid white;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column-reverse;
+  border-radius: 16px;
+  color: white;
+}
+
+.info-total-car p {
+  font-size: 14px;
+  padding-top: 8px;
+}
+
+.custom-1 {
+  background-size: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(to bottom, #0073ff67, #24242c),
+    url("../assets/3.png");
+}
+
+.custom-2 {
+  background-size: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(to bottom, #c7b34567, #24242c),
+    url("../assets/1.png");
+}
+.custom-3 {
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(to bottom, #03690b67, #24242c),
+    url("../assets/2.png");
+}
+.box-info-general-text {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.box-carros {
+  width: 100px;
+  height: 80px;
+  border-radius: 8px;
+  border: 1px solid #0072ff;
+}
+
+.box-carros img {
+  width: 100px;
+  height: 80px;
+  border-radius: 8px;
+}
