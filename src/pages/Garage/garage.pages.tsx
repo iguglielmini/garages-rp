@@ -3,6 +3,7 @@ import React from "react";
 import * as S from "./styles";
 import { Header, InfoCar, Quantity } from "../../components";
 import { ListCard } from "../../components/ListCard";
+import { CardCarMock } from "../../mocks/listcard.mock";
 
 const Garage: React.FC = () => {
   return (
@@ -18,7 +19,11 @@ const Garage: React.FC = () => {
           <InfoCar />
           <Quantity />
         </div>
-        <ListCard />
+        <S.CardDiv>
+          {CardCarMock.map((car) => (
+            <ListCard key={car.id} {...car} />
+          ))}
+        </S.CardDiv>
       </S.Box>
     </S.Content>
   );
