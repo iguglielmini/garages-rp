@@ -10,13 +10,20 @@ import {
 import * as S from "./styles";
 
 interface IHeader {
-  title: string;
-  myCar: () => void;
-  favorite: () => void;
-  impoundCar: () => void;
+  title?: string;
+  myCar?: () => void;
+  favorite?: () => void;
+  impoundCar?: () => void;
+  closeButton?: () => void;
 }
 
-const Header: React.FC<IHeader> = ({ title, myCar, favorite, impoundCar }) => {
+const Header: React.FC<IHeader> = ({
+  title,
+  myCar,
+  favorite,
+  impoundCar,
+  closeButton,
+}) => {
   return (
     <S.Content>
       <S.ContentInfo>
@@ -37,7 +44,7 @@ const Header: React.FC<IHeader> = ({ title, myCar, favorite, impoundCar }) => {
         </S.GroupButton>
       </S.ContentInfo>
       <S.ContentClose>
-        <S.ButtonClose>
+        <S.ButtonClose onClick={closeButton}>
           <MdOutlineClose color="#fff" size={42} />
         </S.ButtonClose>
       </S.ContentClose>

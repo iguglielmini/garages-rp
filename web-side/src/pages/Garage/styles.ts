@@ -1,5 +1,20 @@
 import styled from "styled-components";
 
+export const Bg = styled.div`
+  width: 100%;
+  height: 100%;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  background: linear-gradient(to right, #3498db, transparent);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
+
 export const Content = styled.div`
   padding: 32px;
   width: 1024px;
